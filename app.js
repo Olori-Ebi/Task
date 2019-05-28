@@ -72,7 +72,7 @@ function clearTask(e) {
 }
 
 function filterTask(e) {
-  const text = e.target.value.toLowercase();
+  const text = e.target.value.toLowerCase();
   document.querySelectorAll('.collection-item').forEach(function(task){
     const item = task.firstChild.textContent;
     if(item.toLowerCase().indexOf(text)!= -1) {
